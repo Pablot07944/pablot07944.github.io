@@ -52,7 +52,7 @@ const PROJECTS = [
     title: "Witcher Tower",
     youtube: "r5JU1zkrKq0",
     tags: ["Houdini", "Procedural", "Environment"],
-    summary: "Procedural environment inspired by The Witcher, built in Houdini.",
+    summary: "My first Houdini project, built fully procedurally. Environment inspired by The Witcher.",
     details: [],
     images: []
   }
