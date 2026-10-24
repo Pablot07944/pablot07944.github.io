@@ -33,8 +33,8 @@ const PROJECTS = [
     slug: "fall-into-oblivion",
     title: "The Fall into Oblivion",
     youtube: "KCnwa3lBj3A",
-    tags: ["FX"],
-    summary: "",
+    tags: ["FX", "Personal project"],
+    summary: "Personal project where I handled practically every stage of the shot myself.",
     details: [],
     images: []
   },
@@ -42,8 +42,8 @@ const PROJECTS = [
     slug: "air-battle",
     title: "Air Battle — Breakdown",
     youtube: "ZpWj_6LJ2m0",
-    tags: ["FX", "Breakdown"],
-    summary: "",
+    tags: ["RBD", "Pyro", "Integration", "Breakdown"],
+    summary: "Live-action background plate with an RBD simulation and a pyro simulation integrated into the shot.",
     details: [],
     images: []
   },
