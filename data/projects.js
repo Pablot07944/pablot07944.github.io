@@ -37,8 +37,11 @@ const PROJECTS = [
     title: "The Fall into Oblivion",
     youtube: "KCnwa3lBj3A",
     tags: ["FX", "Personal project"],
-    summary: "Personal project where I handled practically every stage of the shot myself.",
-    details: [],
+    summary: "A sci-fi piece about loneliness and the fragility of life. An astronaut lies trapped in his escape pod after a crash landing; as the camera slowly pulls back, it reveals other pods scattered across the mud, some dark, some still burning. He is the only survivor, while a recon drone scans the wreckage with mechanical indifference.",
+    details: [
+      "The light inside the pod pulses like a heartbeat and slowly fades, turning light into a visual stand-in for the astronaut's life. No dialogue: lighting, composition and camera movement tell the story.",
+      "The idea: in a world sunk in darkness, the last light is the last heartbeat of a life about to fall into oblivion."
+    ],
     images: []
   },
   {
