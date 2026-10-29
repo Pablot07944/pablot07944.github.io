@@ -12,15 +12,6 @@
 
 const PROJECTS = [
   {
-    slug: "spaceship-portal",
-    title: "Spaceship Portal",
-    youtube: "7id-6u_ybkw",
-    tags: ["Houdini", "Pyro", "FX"],
-    summary: "Smoke portal simulation built in Houdini with pyro.",
-    details: [],
-    images: []
-  },
-  {
     slug: "space-marine",
     title: "Space Marine Destruction",
     youtube: "O467oO2mj2o",
@@ -42,6 +33,15 @@ const PROJECTS = [
       "The light inside the pod pulses like a heartbeat and slowly fades, turning light into a visual stand-in for the astronaut's life. No dialogue: lighting, composition and camera movement tell the story.",
       "The idea: in a world sunk in darkness, the last light is the last heartbeat of a life about to fall into oblivion."
     ],
+    images: []
+  },
+  {
+    slug: "spaceship-portal",
+    title: "Spaceship Portal",
+    youtube: "7id-6u_ybkw",
+    tags: ["Houdini", "Pyro", "FX"],
+    summary: "Smoke portal simulation built in Houdini with pyro.",
+    details: [],
     images: []
   },
   {
