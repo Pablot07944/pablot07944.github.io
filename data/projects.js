@@ -23,10 +23,13 @@ const PROJECTS = [
   {
     slug: "space-marine",
     title: "Space Marine Destruction",
-    youtube: "_VBvRu2uukQ",
+    youtube: "O467oO2mj2o",
     tags: ["Houdini", "RBD", "Destruction"],
-    summary: "Rigid body destruction study in Houdini.",
-    details: [],
+    summary: "Inside a monumental church, a wounded soldier staggers toward the altar, fleeing an unseen threat. At his most defenceless moment, a Space Marine crashes down through the temple in a burst of stone, debris and dust: a violent arrival that means protection, not destruction.",
+    details: [
+      "A shaft of overhead light cuts through the dust and frames the Space Marine beneath a statue of a Valkyrie, turning the warrior into an almost divine figure of salvation.",
+      "The idea: divine protection taking physical form. Faith made steel, with salvation arriving with the force of an impact."
+    ],
     images: []
   },
   {
