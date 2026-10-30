@@ -5,7 +5,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;",
 
 function card(p, featured) {
   return `
-    <a class="card${featured ? " featured" : ""}" href="project.html?p=${p.slug}">
+    <a class="card${featured ? " featured" : ""}" href="projects/${p.slug}/">
       <div class="thumb"><img src="${thumb(p.youtube)}" alt="${esc(p.title)}" loading="lazy"><span class="play"></span></div>
       <div class="card-info">
         <h3>${esc(p.title)}</h3>
@@ -24,7 +24,8 @@ if (featured) {
 // Project page
 const page = document.getElementById("project");
 if (page) {
-  const slug = new URLSearchParams(location.search).get("p");
+  // Pages in projects/<slug>/ carry their slug; project.html?p=slug keeps old links working
+  const slug = document.body.dataset.slug || new URLSearchParams(location.search).get("p");
   const i = PROJECTS.findIndex(p => p.slug === slug);
   if (i === -1) {
     location.replace("index.html#work");
@@ -52,9 +53,14 @@ if (page) {
       </div>
       ${p.images.length ? `<div class="gallery">${p.images.map(f =>
         `<img src="assets/projects/${p.slug}/${esc(f)}" alt="${esc(p.title)}" loading="lazy">`).join("")}</div>` : ""}
+      <div class="project-cta">
+        <a href="assets/cv/Pablo_Tain_FX_Artist_CV.pdf" target="_blank">CV — FX Artist</a>
+        <a href="https://www.linkedin.com/in/pablo-tain/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
       <nav class="pager">
-        <a href="project.html?p=${prev.slug}"><span>Previous</span>${esc(prev.title)}</a>
-        <a href="project.html?p=${next.slug}" class="next"><span>Next</span>${esc(next.title)}</a>
+        <a href="projects/${prev.slug}/"><span>Previous</span>${esc(prev.title)}</a>
+        <a href="projects/${next.slug}/" class="next"><span>Next</span>${esc(next.title)}</a>
       </nav>`;
   }
 }

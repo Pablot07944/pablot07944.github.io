@@ -42,6 +42,7 @@ main > section { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 .hero { padding-top: 120px !important; padding-bottom: 96px !important; }
 .eyebrow { color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 20px; }
 .hero h1 { font-size: clamp(40px, 7vw, 84px); line-height: 1.02; font-weight: 600; }
+.tagline { font: 500 clamp(22px, 3.2vw, 36px)/1.2 "Space Grotesk", sans-serif; letter-spacing: -0.02em; margin-top: 16px; }
 .lead { color: var(--muted); font-size: clamp(17px, 2vw, 20px); max-width: 600px; margin-top: 24px; }
 .hero-actions { display: flex; gap: 12px; margin-top: 36px; flex-wrap: wrap; }
 .btn {
@@ -125,6 +126,16 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 32px
 .pager span { display: block; font: 500 12px "Inter", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
 .pager .next { text-align: right; }
 
+.project-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+.project-cta a { padding: 10px 20px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; }
+.project-cta a:hover { border-color: var(--text); }
+
+/* Client work */
+.credit { padding-top: 72px !important; padding-bottom: 72px !important; border-top: 1px solid var(--line); }
+.credit-row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: start; }
+.credit-row h3 { font-size: clamp(30px, 4.5vw, 48px); font-weight: 600; line-height: 1.1; }
+.credit-row > p { color: #c4c4cb; font-size: 18px; }
+
 /* Mobile */
 @media (max-width: 760px) {
   .nav nav { gap: 16px; }
@@ -136,5 +147,7 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 32px
   .headshot { max-width: 280px; }
   .contact { padding-top: 80px !important; padding-bottom: 80px !important; }
   .project-info { grid-template-columns: 1fr; gap: 16px; padding: 28px 0 40px; }
+  .credit { padding-top: 56px !important; padding-bottom: 56px !important; }
+  .credit-row { grid-template-columns: 1fr; gap: 16px; }
   .pager a { font-size: 16px; }
 }
