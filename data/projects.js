@@ -12,6 +12,18 @@
 
 const PROJECTS = [
   {
+    slug: "batman-threshold",
+    title: "Batman: Threshold",
+    youtube: "otiOx6ggQjA",
+    tags: ["Houdini", "Karma XPU", "Nuke", "Cinematic"],
+    summary: "The quiet moment before another long night. Batman steps out of the shadows to the edge of a rooftop and faces a Gotham consumed by chaos: fires across the skyline, dark streets and the Bat-Signal lighting the clouds. In one continuous camera move he leaves the frame, a flight of bats takes over, and the city becomes the subject.",
+    details: [
+      "The idea: not Batman in action, but the moment before it. The silent realization that Gotham will always need him.",
+      "Personal project. Houdini for environment, FX, simulations and scene assembly; Karma XPU for lighting and rendering; Nuke for compositing, atmosphere and grading."
+    ],
+    images: []
+  },
+  {
     slug: "space-marine",
     title: "Space Marine Destruction",
     youtube: "O467oO2mj2o",
